@@ -1,4 +1,2 @@
-web:gunicorn app:app --preload
-heroku buildpacks:clear
-heroku buildpacks:add --index heroku/python
+web:gunicorn app:app 
 heroku ps:scale web=1
