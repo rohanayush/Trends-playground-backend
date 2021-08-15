@@ -1,3 +1,5 @@
-heroku ps:scale web=1
+
+gunicorn -b :5000 --access-logfile- --error-logfile- app:app
+
 
 
