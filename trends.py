@@ -5,7 +5,7 @@ from json import dumps
 from flask_jsonpify import jsonify
 import pandas as pd
 from werkzeug.utils import secure_filename
-import datacompy
+# import datacompy
 from pytrends.request import TrendReq
 
 app = Flask(__name__)
