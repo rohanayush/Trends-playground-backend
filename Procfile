@@ -1,1 +1,1 @@
-web:gunicorn trends:app
+web: gunicorn trends:app
