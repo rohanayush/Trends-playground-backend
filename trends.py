@@ -52,6 +52,7 @@ def getData():
     return jsonify(df1)
 
 @app.route('/trending', methods=['POST'])
+@cross_origin()
 def trending():
     tr=request.data
     tr=tr.decode('utf-8')
