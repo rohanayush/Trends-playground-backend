@@ -11,6 +11,7 @@ from pytrends.request import TrendReq
 app = Flask(__name__)
 api = Api(app)
 CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 conn=''
 @app.route("/")
 def hello():
